@@ -7,7 +7,7 @@ This code repository contains the code needed to track the resistance changes ov
 
 The simulation process and function follow these steps:
 
-Initialization: Characterize the system with its parameters and initialize the system in its initial state.
+nitialization: Characterize the system with its parameters and initialize the system in its initial state.
 
 Loop: Modification of an external parameter in the system, dT or dI, in small steps. At each step, the following process is performed:
 
@@ -15,11 +15,11 @@ Step 1: Voltage_nodes (function) – Receives the system structure, resistances,
 
 Step 2: System convergence check.
 
-Step 3: find_currents  (function) – Receives the system structure, resistances, and voltages, and solves Kirchhoff’s equation for each resistor. Returns the current and heat for each resistor.
+Step 3: find_currents (function) – Receives the system structure, resistances, and voltages, and solves Kirchhoff’s equation for each resistor. Returns the current and heat for each resistor.
 
-Step 4: heat_transfer_spectral  (function) – Receives the system structure and the heat dissipated by one network, and by using the diffusion equation, it computes the heat perceived by the other network.
+Step 4: heat_transfer_spectral (function) – Receives the system structure and the heat dissipated by the network, and by using the diffusion equation, it computes the heat the network perceives back.
 
-Step 5: update_resistors_SC  (function) – Receives the system structure and its state at the current step, and determines the resistances and states of all resistors, using the Josephson I–V characteristic.
+Step 5: update_resistors_SC (function) – Receives the system structure and its state at the current step, and determines the resistances and states of all resistors, using the Josephson I–V characteristic.
 
 Repeat the steps until system convergence is achieved.
 
