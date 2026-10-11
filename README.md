@@ -2,7 +2,7 @@
 The files in this folder refer to the microscopic mechanism of interdependent superconducting networks studied in the article entitled "The role of dependency interaction range in a self-dependent Superconducting Network" and freely accessible at ///
 
 
-The folder "MATLAB code" contains the code needed to track the resistance changes over time of both networks (or only one) with constant current and different temperatures. This allows us to observe an abrupt transition when the system reaches a steady state and to capture the plateau behavior during the transition. The main code for simgle-heat-dependent network is in the file "one_SC_network_main.m", and for coupled-heat-dependent networks in the file "interdependent_SC_networks_main.m". In the absence of a Matlab license, one can use Octave as a compatible program to run the code.
+This code repository contains the code needed to track the resistance changes over time of both networks (or only one) with constant current and different temperatures. This allows us to observe an abrupt transition when the system reaches a steady state and to capture the plateau behavior during the transition. The main code for simgle-heat-dependent network is in the file "one_SC_network_main.m", and for coupled-heat-dependent networks in the file "interdependent_SC_networks_main.m". In the absence of a Matlab license, one can use Octave as a compatible program to run the code.
 
 
 The simulation process and function follow these steps:
